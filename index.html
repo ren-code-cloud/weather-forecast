@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Application</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search__bar">
+        <input class="__inputValue" type="text" placeholder="Enter your city">
+        <button class="search__button">
+          <span class="material-symbols-outlined">
+           search
+          </span>
+        </button>
+      </div>
+      <div class="__weather">
+        <div class="__country">
+          <h4>Country : <span id="__country"></span></h4>
+          <h4>City : <span id="__city"></span></h4>
+        </div>
+        <div class="__images">
+           <img src="images/clouds.png" alt="this is an error">
+        </div>
+        <div class="__weather_status">
+               Big chance to a beautiful sunday!
+            <p>
+            Sky Condition : The sky is typically described as "clear" or "mostly clear," indicating the absence of clouds or only a few scattered clouds.
+           </p>
+        </div>
+          <div class="__details">
+            <div class="__columns">
+              <div>Temperature : </div> <span class="detailed" data-col></span>
+            </div>
+            <div class="__columns">
+              Temperature Max : <span class="detailed" data-col></span>
+            </div>
+            <div class="__columns">
+              Temperature Min : <span class="detailed" data-col></span>
+            </div>
+            <div class="__columns">
+              Humidity : <span data-col></span>
+            </div>
+            <div class="__columns">
+              Pressure : <span data-col></span>
+            </div>
+            <div class="__columns">
+              Feels like : <span data-col></span>
+            </div>
+          </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
